@@ -64,6 +64,7 @@ nav a:hover{
 	width: 100vw;
 }
 #about{
+	background-color: black;
 	background: url(../images/about.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -72,6 +73,7 @@ nav a:hover{
 	overflow: hidden;
 }
 #bookshelf{
+	background-color: black;
 	background: url(../images/lib.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -80,6 +82,7 @@ nav a:hover{
 	overflow: hidden;
 }
 #contact{
+	background-color: black;
 	background: url(../images/contact.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
