@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html { 
+	background: url(../images/front.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+	font-size: 13px;
+}
+body{
+	font-family: "Open Sans";
+}
+header{
+	text-transform: uppercase;
+	padding: 10px;
+}
+header a{
+	color: #000000;
+	text-decoration: none;
+}
+header div a{
+	font-size: 1.4em;
+}
+nav a:hover{
+	font-weight: bolder;
+}
+#tagline{
+	font-size: 0.8em;
+}
+.navbar, .navbarItems{
+	flex-direction: column;
+}
+.navbarItems{
+	display: none;
+}
+.navbarToggleShow{
+	display: flex;
+}
+.navbarToggle{
+	display: inline-flex;
+	cursor: pointer;
+	font-size: 1.8em;
+}
+#logo{
+	display: inline-block;
+	margin-left: 1%;
+	min-width: 25vw;
+}
+.navbarLink{
+	padding: 3%;
+}
+@media screen and (min-width: 400px){
+	html{
+		font-size: 14px;
+	}
+	.navbarLink{
+		padding: 2%;
+	}
+	header div a{
+		font-size: 1.2em;
+	}
+	#tagline{
+		font-size: 0.8em;
+	}
+}
+
+.bird-1 {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+	background-size: auto 100%;
+	width: 88px;
+	height: 125px;
+	will-change: background-position;
+	
+	animation-name: fly-cycle;
+	animation-duration: 1s;
+	animation-delay: -0.5s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+}
+
+.bird-container-1 {
+	position: absolute;
+	top: 20%;
+	left: -10%;
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
+	animation-name: fly-one;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 6s;
+	animation-delay: 0.1s;
+}
+
+@media screen and (min-width: 500px){
+	.bird-container-1 {
+		animation-duration: 10s;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.bird-container-1 {
+		animation-duration: 15s;
+	}
+}
+
+@keyframes fly-cycle {
+	
+	100% {
+		background-position: -900px 0;
+	}
+	
+}
+
+@keyframes fly-one {
+	
+	0% {
+		transform: scale(0.3) translateX(-10vw);
+	}
+	
+	10% {
+		transform: translateY(2vh) translateX(10vw) scale(0.4);
+	}
+	
+	20% {
+		transform: translateY(0vh) translateX(30vw) scale(0.5);
+	}
+	
+	30% {
+		transform: translateY(4vh) translateX(50vw) scale(0.6);
+	}
+	
+	40% {
+		transform: translateY(2vh) translateX(70vw) scale(0.6);
+	}
+	
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.6);
+	}
+	
+	60% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+	
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+	
+}
+.bird-2 {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+	background-size: auto 100%;
+	width: 88px;
+	height: 125px;
+	will-change: background-position;
+	
+	animation-name: fly-cycle;
+	animation-duration: 0.9s;
+	animation-delay: -0.75s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+}
+
+.bird-container-2 {
+		position: absolute;
+		top: 20%;
+		left: -10%;
+		transform: scale(0) translateX(-10vw);
+		will-change: transform;
+		animation-name: fly-two;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-duration: 8s;
+		animation-delay: 1s;
+	}
+
+@media screen and (min-width: 500px){
+	.bird-container-2 {
+		animation-duration: 14s;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.bird-container-2 {
+		animation-duration: 20s;
+	}
+}
+
+@keyframes fly-cycle {
+	
+	100% {
+		background-position: -900px 0;
+	}
+	
+}
+
+@keyframes fly-two {
+	
+	0% {
+		transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+	}
+	
+	10% {
+		transform: translateY(0vh) translateX(10vw) scale(0.4);
+	}
+	
+	20% {
+		transform: translateY(-4vh) translateX(30vw) scale(0.6);
+	}
+	
+	30% {
+		transform: translateY(1vh) translateX(50vw) scale(0.45);
+	}
+	
+	40% {
+		transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+	}
+	
+	50% {
+		transform: translateY(-5vh) translateX(90vw) scale(0.45);
+	}
+	
+	60% {
+		transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+	
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+	
+}

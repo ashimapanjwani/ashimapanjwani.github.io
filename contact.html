@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="css/reset-style-sheet.css">
+	<link rel="stylesheet" type="text/css" href="css/main-style-sheet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+</head>
+<body>
+	<div id="container">
+		<header class="navbar">
+			<div class="navbarToggle">
+		      <i class="fa fa-bars fa-lg"></i>
+		    </div>
+			<div id="logo">
+				<a href="index.html">Ashima Panjwani</a>
+				<br>
+				<span id="tagline">Findings, Lessons &amp; Thoughts</span>
+			</div>
+			<nav class="navbarItems">
+				<a href="about.html" class="navbarLink">About</a>
+				<a href="bookshelf.html" class="navbarLink">Bookshelf</a>
+				<a href="blog.html" class="navbarLink">Blog</a>
+				<a href="contact.html" class="navbarLink active">Contact</a>
+			</nav>
+		</header>
+		<script>
+			function classToggle() {
+			  const navs = document.querySelectorAll('.navbarItems')
+			  
+			  navs.forEach(nav => nav.classList.toggle('navbarToggleShow'));
+			}
+
+			document.querySelector('.navbarToggle')
+			  .addEventListener('click', classToggle);
+		</script>
+		<div class="bgimg" id="contact">
+			<h1>Contact</h1>
+		</div>
+		<div id="credits">
+			Photography: <a href="https://unsplash.com/photos/hjwKMkehBco?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Álvaro Serrano</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+		</div>
+		<div id="content">
+			You can drop me an email at <span class="bold">ashimapanjwani@gmail.com</span>, or use the contact form below.
+			<form method="POST" action="message-sent.html">
+				<label for="name">* Name:</label>
+				<br>
+				<input type="text" name="name" id="name" required>
+				<br>
+				<label for="email">* Email:</label>
+				<br>
+				<input type="email" name="email" id="email" required>
+				<br>
+				<label for="subject">&nbsp;&nbsp;Subject:</label>
+				<br>
+				<input type="text" name="subject" id="subject">
+				<br>
+				<label for="message">* Message:</label>
+				<br>
+				<textarea rows="10" cols="35" required="" id="message"></textarea>
+				<br>
+				<div id="buttonWrapper">
+					<input type="submit" value="send message" class="button bold">
+				</div>	
+			</form>
+		</div>
+	</div>
+	<footer>
+		<a href="https://www.linkedin.com/in/ashimapanjwani"><i class="fa fa-linkedin fa-lg"></i></a>
+		<a href="https://github.com/ashimapanjwani"><i class="fa fa-github fa-lg"></i></a>
+		<div id="frontCredits">
+			Landing Page Photography: <a href="https://unsplash.com/photos/EPy0gBJzzZU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Johann Siemens</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+		</div>
+	</footer>
+</body>
+</html>
+	

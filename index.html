@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Ashima Panjwani</title>
+	<link rel="stylesheet" type="text/css" href="css/reset-style-sheet.css">
+	<link rel="stylesheet" type="text/css" href="css/landing-style-sheet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+</head>
+<body>
+	<header class="navbar">
+		<div class="navbarToggle">
+	      <i class="fa fa-bars fa-lg"></i>
+	    </div>
+		<div id="logo">
+			<a href="index.html">Ashima Panjwani</a>
+			<br>
+			<span id="tagline">Findings, Lessons &amp; Thoughts</span>
+		</div>
+		<nav class="navbarItems">
+			<a href="about.html" class="navbarLink">About</a>
+			<a href="bookshelf.html" class="navbarLink">Bookshelf</a>
+			<a href="blog.html" class="navbarLink">Blog</a>
+			<a href="contact.html" class="navbarLink">Contact</a>
+		</nav>
+	</header>
+	<script>
+		function classToggle() {
+		  const navs = document.querySelectorAll('.navbarItems')
+		  
+		  navs.forEach(nav => nav.classList.toggle('navbarToggleShow'));
+		}
+
+		document.querySelector('.navbarToggle')
+		  .addEventListener('click', classToggle);
+	</script>
+	<div class="bird-container-1">
+		<div class="bird-1"></div>
+	</div>
+	<div class="bird-container-2">
+		<div class="bird-2"></div>
+	</div>
+</body>
+</html>
